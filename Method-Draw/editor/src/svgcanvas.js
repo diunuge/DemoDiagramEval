@@ -112,6 +112,14 @@ var svgns = "http://www.w3.org/2000/svg",
   se_ns = "http://svg-edit.googlecode.com",
   htmlns = "http://www.w3.org/1999/xhtml",
   mathns = "http://www.w3.org/1998/Math/MathML";
+  
+/*var svgns = "http://www.w3.org/2000/svg",
+  xlinkns = "http://www.w3.org/1999/xlink",
+  xmlns = "http://www.w3.org/XML/1998/namespace",
+  xmlnsns = "http://www.w3.org/2000/xmlns/", // see http://www.w3.org/TR/REC-xml-names/#xmlReserved
+  se_ns = "http://svg-edit.googlecode.com",
+  htmlns = "http://www.w3.org/1999/xhtml",
+  mathns = "http://www.w3.org/1998/Math/MathML";*/
 
 // Default configuration options
 var curConfig = {
@@ -172,7 +180,7 @@ var clearSvgContentElement = canvas.clearSvgContentElement = function() {
   }).appendTo(svgroot);
 
   // TODO: make this string optional and set by the client
-  var comment = svgdoc.createComment(" Created with Method Draw - http://github.com/duopixel/Method-Draw/ ");
+  var comment = svgdoc.createComment("Created for Diagram Assessment by Diunuge Buddhika Wijesinghe");
   svgcontent.appendChild(comment);
 };
 clearSvgContentElement();
